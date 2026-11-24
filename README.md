@@ -9,10 +9,20 @@ A universal Windows file-conversion and productivity app built around an animate
 
 **DeConverter — Developed by Rishi Busineni**
 
-## Quick start (Windows 10/11, 64-bit)
-**From source:** extract, run **INSTALL.bat** (private Python environment; offers winget installs of engines), then **START.bat**.
-**Build the real distributions:** run **BUILD.bat** (or the GitHub Actions workflow). Output: `DeConverter_Setup.exe` (installer,
-Explorer integration, offline engines) and `DeConverter-Portable.zip` (settings beside the exe, no registry changes).
+## ⬇️ Downloads
+
+**Latest release: v2.0.1**
+
+- [Download Windows Installer (.exe)](https://github.com/rishizz709/DeConverter/releases/download/v2.0.1/DeConverter_Setup.exe)
+- [Download Portable Version (.zip)](https://github.com/rishizz709/DeConverter/releases/download/v2.0.1/DeConverter-Portable.zip)
+- [View all releases](https://github.com/rishizz709/DeConverter/releases)
+
+> **Experimental release:** Windows distribution builds have not yet completed full real-Windows testing. Please review the testing documentation before use.
+
+### Build from source
+
+Extract the source, run `INSTALL.bat` to set up the private Python environment, then `START.bat`. To build distributions, run `BUILD.bat`.
+
 
 ## Ways to open the menu
 - **Drag & drop** a file onto the main window (always available).
