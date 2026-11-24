@@ -1,0 +1,31 @@
+[project]
+name = "deconverter"
+version = "2.0.1"
+description = "DeConverter - One File. Every Possibility. Developed by Rishi Busineni"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Rishi Busineni" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::FutureWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["tests/fixtures"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E701", "E702", "E731", "B008", "UP037", "E402", "I001", "UP035", "B904", "E741", "E501", "UP042", "UP031"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+check_untyped_defs = false
+exclude = ["tests/", "packaging/"]
+
+[tool.coverage.run]
+source = ["core", "engines", "integrations", "app"]
